@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5806DA7A1C6B8CCD00CA2038 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */; };
+		5806DA7C1C6BC22400CA2038 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806DA7B1C6BC22400CA2038 /* test.swift */; };
+		5840988C1C50B6CF002D12E8 /* SOAPServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */; };
+		58976BAC1C3CE41B00E23344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58976BAB1C3CE41B00E23344 /* AppDelegate.swift */; };
+		58976BAE1C3CE41B00E23344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58976BAD1C3CE41B00E23344 /* ViewController.swift */; };
+		58976BB11C3CE41B00E23344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58976BAF1C3CE41B00E23344 /* Main.storyboard */; };
+		58976BB31C3CE41B00E23344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58976BB21C3CE41B00E23344 /* Assets.xcassets */; };
+		58976BB61C3CE41B00E23344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58976BB41C3CE41B00E23344 /* LaunchScreen.storyboard */; };
+		58D36A551C5E53DE00153436 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A541C5E53DE00153436 /* CheckboxButton.swift */; };
+		58D36A571C5F262800153436 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A561C5F262800153436 /* SwiftSpinner.swift */; };
+		58D36A5B1C5F29AA00153436 /* ACHMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A5A1C5F29AA00153436 /* ACHMainViewController.swift */; };
+		58D36A9F1C60FF8600153436 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A8A1C60FF8600153436 /* IQNSArray+Sort.swift */; };
+		58D36AA01C60FF8600153436 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A8B1C60FF8600153436 /* IQUIScrollView+Additions.swift */; };
+		58D36AA11C60FF8600153436 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A8C1C60FF8600153436 /* IQUITextFieldView+Additions.swift */; };
+		58D36AA21C60FF8600153436 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A8D1C60FF8600153436 /* IQUIView+Hierarchy.swift */; };
+		58D36AA31C60FF8600153436 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A8E1C60FF8600153436 /* IQUIViewController+Additions.swift */; };
+		58D36AA41C60FF8600153436 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A8F1C60FF8600153436 /* IQUIWindow+Hierarchy.swift */; };
+		58D36AA51C60FF8600153436 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A911C60FF8600153436 /* IQKeyboardManagerConstants.swift */; };
+		58D36AA61C60FF8600153436 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A921C60FF8600153436 /* IQKeyboardManagerConstantsInternal.swift */; };
+		58D36AA71C60FF8600153436 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A931C60FF8600153436 /* IQKeyboardManager.swift */; };
+		58D36AA81C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A941C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift */; };
+		58D36AA91C60FF8600153436 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A961C60FF8600153436 /* IQTextView.swift */; };
+		58D36AAA1C60FF8600153436 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A981C60FF8600153436 /* IQBarButtonItem.swift */; };
+		58D36AAB1C60FF8600153436 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A991C60FF8600153436 /* IQTitleBarButtonItem.swift */; };
+		58D36AAC1C60FF8600153436 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A9A1C60FF8600153436 /* IQToolbar.swift */; };
+		58D36AAD1C60FF8600153436 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36A9B1C60FF8600153436 /* IQUIView+IQKeyboardToolbar.swift */; };
+		58D36AAE1C60FF8600153436 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58D36A9D1C60FF8600153436 /* Info.plist */; };
+		58D36AAF1C60FF8600153436 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 58D36A9E1C60FF8600153436 /* IQKeyboardManager.bundle */; };
+		58DED7531C6514D60008E8E3 /* JLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DED7501C6514D60008E8E3 /* JLToast.swift */; };
+		58DED7541C6514D60008E8E3 /* JLToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DED7511C6514D60008E8E3 /* JLToastCenter.swift */; };
+		58DED7551C6514D60008E8E3 /* JLToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DED7521C6514D60008E8E3 /* JLToastView.swift */; };
+		58DED7571C65FE7A0008E8E3 /* SIgnatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DED7561C65FE7A0008E8E3 /* SIgnatureViewController.swift */; };
+		58E664521C4386A700E2589F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E664511C4386A700E2589F /* SettingsViewController.swift */; };
+		58E664541C46244F00E2589F /* ACHSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E664531C46244F00E2589F /* ACHSettingsController.swift */; };
+		58E664561C4625C300E2589F /* CreditSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E664551C4625C300E2589F /* CreditSettingsController.swift */; };
+		58F6CEE51C47FDB30057F234 /* GeneralSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6CEE41C47FDB30057F234 /* GeneralSettingsController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		5806DA7B1C6BC22400CA2038 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPServiceController.swift; sourceTree = "<group>"; };
+		58976BA81C3CE41B00E23344 /* SimplyCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58976BAB1C3CE41B00E23344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58976BAD1C3CE41B00E23344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58976BB01C3CE41B00E23344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58976BB21C3CE41B00E23344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58976BB51C3CE41B00E23344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58976BB71C3CE41B00E23344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D36A541C5E53DE00153436 /* CheckboxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		58D36A561C5F262800153436 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		58D36A5A1C5F29AA00153436 /* ACHMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHMainViewController.swift; sourceTree = "<group>"; };
+		58D36A8A1C60FF8600153436 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		58D36A8B1C60FF8600153436 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		58D36A8C1C60FF8600153436 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		58D36A8D1C60FF8600153436 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		58D36A8E1C60FF8600153436 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		58D36A8F1C60FF8600153436 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		58D36A911C60FF8600153436 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		58D36A921C60FF8600153436 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		58D36A931C60FF8600153436 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		58D36A941C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		58D36A961C60FF8600153436 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		58D36A981C60FF8600153436 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		58D36A991C60FF8600153436 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		58D36A9A1C60FF8600153436 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		58D36A9B1C60FF8600153436 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		58D36A9D1C60FF8600153436 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D36A9E1C60FF8600153436 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		58DED74F1C6514D60008E8E3 /* JLToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLToast.h; sourceTree = "<group>"; };
+		58DED7501C6514D60008E8E3 /* JLToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToast.swift; sourceTree = "<group>"; };
+		58DED7511C6514D60008E8E3 /* JLToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastCenter.swift; sourceTree = "<group>"; };
+		58DED7521C6514D60008E8E3 /* JLToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastView.swift; sourceTree = "<group>"; };
+		58DED7561C65FE7A0008E8E3 /* SIgnatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIgnatureViewController.swift; sourceTree = "<group>"; };
+		58E664511C4386A700E2589F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		58E664531C46244F00E2589F /* ACHSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHSettingsController.swift; sourceTree = "<group>"; };
+		58E664551C4625C300E2589F /* CreditSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditSettingsController.swift; sourceTree = "<group>"; };
+		58F6CEE41C47FDB30057F234 /* GeneralSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58976BA51C3CE41B00E23344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58976B9F1C3CE41B00E23344 = {
+			isa = PBXGroup;
+			children = (
+				58976BBD1C3CEB6200E23344 /* resources */,
+				58976BAA1C3CE41B00E23344 /* SimplyCash */,
+				58976BA91C3CE41B00E23344 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58976BA91C3CE41B00E23344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58976BA81C3CE41B00E23344 /* SimplyCash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58976BAA1C3CE41B00E23344 /* SimplyCash */ = {
+			isa = PBXGroup;
+			children = (
+				58DED74E1C6514D60008E8E3 /* JLToast */,
+				58D36A881C60FF8500153436 /* IQKeyboardManagerSwift */,
+				58D36A561C5F262800153436 /* SwiftSpinner.swift */,
+				58D36A541C5E53DE00153436 /* CheckboxButton.swift */,
+				58976BAB1C3CE41B00E23344 /* AppDelegate.swift */,
+				58976BAD1C3CE41B00E23344 /* ViewController.swift */,
+				58976BAF1C3CE41B00E23344 /* Main.storyboard */,
+				58976BB21C3CE41B00E23344 /* Assets.xcassets */,
+				58976BB41C3CE41B00E23344 /* LaunchScreen.storyboard */,
+				58976BB71C3CE41B00E23344 /* Info.plist */,
+				58E664511C4386A700E2589F /* SettingsViewController.swift */,
+				58E664531C46244F00E2589F /* ACHSettingsController.swift */,
+				58E664551C4625C300E2589F /* CreditSettingsController.swift */,
+				58F6CEE41C47FDB30057F234 /* GeneralSettingsController.swift */,
+				5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */,
+				58D36A5A1C5F29AA00153436 /* ACHMainViewController.swift */,
+				5806DA7B1C6BC22400CA2038 /* test.swift */,
+				58DED7561C65FE7A0008E8E3 /* SIgnatureViewController.swift */,
+				5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */,
+			);
+			path = SimplyCash;
+			sourceTree = "<group>";
+		};
+		58976BBD1C3CEB6200E23344 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			path = SimplyCash/resources;
+			sourceTree = "<group>";
+		};
+		58D36A881C60FF8500153436 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A891C60FF8600153436 /* Categories */,
+				58D36A901C60FF8600153436 /* Constants */,
+				58D36A931C60FF8600153436 /* IQKeyboardManager.swift */,
+				58D36A941C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift */,
+				58D36A951C60FF8600153436 /* IQTextView */,
+				58D36A971C60FF8600153436 /* IQToolbar */,
+				58D36A9C1C60FF8600153436 /* Resources */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		58D36A891C60FF8600153436 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A8A1C60FF8600153436 /* IQNSArray+Sort.swift */,
+				58D36A8B1C60FF8600153436 /* IQUIScrollView+Additions.swift */,
+				58D36A8C1C60FF8600153436 /* IQUITextFieldView+Additions.swift */,
+				58D36A8D1C60FF8600153436 /* IQUIView+Hierarchy.swift */,
+				58D36A8E1C60FF8600153436 /* IQUIViewController+Additions.swift */,
+				58D36A8F1C60FF8600153436 /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		58D36A901C60FF8600153436 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A911C60FF8600153436 /* IQKeyboardManagerConstants.swift */,
+				58D36A921C60FF8600153436 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		58D36A951C60FF8600153436 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A961C60FF8600153436 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		58D36A971C60FF8600153436 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A981C60FF8600153436 /* IQBarButtonItem.swift */,
+				58D36A991C60FF8600153436 /* IQTitleBarButtonItem.swift */,
+				58D36A9A1C60FF8600153436 /* IQToolbar.swift */,
+				58D36A9B1C60FF8600153436 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		58D36A9C1C60FF8600153436 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A9D1C60FF8600153436 /* Info.plist */,
+				58D36A9E1C60FF8600153436 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58DED74E1C6514D60008E8E3 /* JLToast */ = {
+			isa = PBXGroup;
+			children = (
+				58DED74F1C6514D60008E8E3 /* JLToast.h */,
+				58DED7501C6514D60008E8E3 /* JLToast.swift */,
+				58DED7511C6514D60008E8E3 /* JLToastCenter.swift */,
+				58DED7521C6514D60008E8E3 /* JLToastView.swift */,
+			);
+			path = JLToast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58976BA71C3CE41B00E23344 /* SimplyCash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58976BBA1C3CE41B00E23344 /* Build configuration list for PBXNativeTarget "SimplyCash" */;
+			buildPhases = (
+				58976BA41C3CE41B00E23344 /* Sources */,
+				58976BA51C3CE41B00E23344 /* Frameworks */,
+				58976BA61C3CE41B00E23344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplyCash;
+			productName = SimplyCash;
+			productReference = 58976BA81C3CE41B00E23344 /* SimplyCash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58976BA01C3CE41B00E23344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Salman Khalid";
+				TargetAttributes = {
+					58976BA71C3CE41B00E23344 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W6N67XY9Z4;
+					};
+				};
+			};
+			buildConfigurationList = 58976BA31C3CE41B00E23344 /* Build configuration list for PBXProject "SimplyCash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58976B9F1C3CE41B00E23344;
+			productRefGroup = 58976BA91C3CE41B00E23344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58976BA71C3CE41B00E23344 /* SimplyCash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58976BA61C3CE41B00E23344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D36AAF1C60FF8600153436 /* IQKeyboardManager.bundle in Resources */,
+				58D36AAE1C60FF8600153436 /* Info.plist in Resources */,
+				58976BB61C3CE41B00E23344 /* LaunchScreen.storyboard in Resources */,
+				58976BB31C3CE41B00E23344 /* Assets.xcassets in Resources */,
+				58976BB11C3CE41B00E23344 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58976BA41C3CE41B00E23344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58976BAE1C3CE41B00E23344 /* ViewController.swift in Sources */,
+				58976BAC1C3CE41B00E23344 /* AppDelegate.swift in Sources */,
+				58D36AAA1C60FF8600153436 /* IQBarButtonItem.swift in Sources */,
+				5806DA7C1C6BC22400CA2038 /* test.swift in Sources */,
+				58D36A571C5F262800153436 /* SwiftSpinner.swift in Sources */,
+				58D36A551C5E53DE00153436 /* CheckboxButton.swift in Sources */,
+				58D36AA21C60FF8600153436 /* IQUIView+Hierarchy.swift in Sources */,
+				58E664521C4386A700E2589F /* SettingsViewController.swift in Sources */,
+				58D36AA81C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				58DED7551C6514D60008E8E3 /* JLToastView.swift in Sources */,
+				58DED7541C6514D60008E8E3 /* JLToastCenter.swift in Sources */,
+				58D36AA01C60FF8600153436 /* IQUIScrollView+Additions.swift in Sources */,
+				58D36A9F1C60FF8600153436 /* IQNSArray+Sort.swift in Sources */,
+				58D36AAB1C60FF8600153436 /* IQTitleBarButtonItem.swift in Sources */,
+				58D36AA71C60FF8600153436 /* IQKeyboardManager.swift in Sources */,
+				58E664541C46244F00E2589F /* ACHSettingsController.swift in Sources */,
+				58D36AAD1C60FF8600153436 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				58E664561C4625C300E2589F /* CreditSettingsController.swift in Sources */,
+				58D36AA51C60FF8600153436 /* IQKeyboardManagerConstants.swift in Sources */,
+				58D36AA61C60FF8600153436 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				58DED7571C65FE7A0008E8E3 /* SIgnatureViewController.swift in Sources */,
+				58F6CEE51C47FDB30057F234 /* GeneralSettingsController.swift in Sources */,
+				58D36A5B1C5F29AA00153436 /* ACHMainViewController.swift in Sources */,
+				58D36AA31C60FF8600153436 /* IQUIViewController+Additions.swift in Sources */,
+				5840988C1C50B6CF002D12E8 /* SOAPServiceController.swift in Sources */,
+				58DED7531C6514D60008E8E3 /* JLToast.swift in Sources */,
+				58D36AA11C60FF8600153436 /* IQUITextFieldView+Additions.swift in Sources */,
+				5806DA7A1C6B8CCD00CA2038 /* YPDrawSignatureView.swift in Sources */,
+				58D36AA41C60FF8600153436 /* IQUIWindow+Hierarchy.swift in Sources */,
+				58D36AA91C60FF8600153436 /* IQTextView.swift in Sources */,
+				58D36AAC1C60FF8600153436 /* IQToolbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58976BAF1C3CE41B00E23344 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58976BB01C3CE41B00E23344 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58976BB41C3CE41B00E23344 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58976BB51C3CE41B00E23344 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58976BB81C3CE41B00E23344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58976BB91C3CE41B00E23344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58976BBB1C3CE41B00E23344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
+				INFOPLIST_FILE = SimplyCash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "16090729-5e53-401f-832e-0c39bf331f89";
+			};
+			name = Debug;
+		};
+		58976BBC1C3CE41B00E23344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
+				INFOPLIST_FILE = SimplyCash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "16090729-5e53-401f-832e-0c39bf331f89";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58976BA31C3CE41B00E23344 /* Build configuration list for PBXProject "SimplyCash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58976BB81C3CE41B00E23344 /* Debug */,
+				58976BB91C3CE41B00E23344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58976BBA1C3CE41B00E23344 /* Build configuration list for PBXNativeTarget "SimplyCash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58976BBB1C3CE41B00E23344 /* Debug */,
+				58976BBC1C3CE41B00E23344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58976BA01C3CE41B00E23344 /* Project object */;
+}
