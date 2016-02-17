@@ -96,6 +96,10 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
             let svc = segue.destinationViewController as! SIgnatureViewController;
             
             svc.transID = ReferenceNumber
+            svc.orderID = OrderId
+            svc.authCode = AuthCode
+            svc.saleAmount = saleAmountVal.text!
+
             
         }
         // Get the new view controller using segue.destinationViewController.

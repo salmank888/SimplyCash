@@ -42,6 +42,7 @@
 		58E664521C4386A700E2589F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E664511C4386A700E2589F /* SettingsViewController.swift */; };
 		58E664541C46244F00E2589F /* ACHSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E664531C46244F00E2589F /* ACHSettingsController.swift */; };
 		58E664561C4625C300E2589F /* CreditSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E664551C4625C300E2589F /* CreditSettingsController.swift */; };
+		58F6B68A1C71D1A300C8B813 /* ConfirmTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6B6891C71D1A300C8B813 /* ConfirmTransactionViewController.swift */; };
 		58F6CEE51C47FDB30057F234 /* GeneralSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6CEE41C47FDB30057F234 /* GeneralSettingsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		58E664511C4386A700E2589F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		58E664531C46244F00E2589F /* ACHSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHSettingsController.swift; sourceTree = "<group>"; };
 		58E664551C4625C300E2589F /* CreditSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditSettingsController.swift; sourceTree = "<group>"; };
+		58F6B6891C71D1A300C8B813 /* ConfirmTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmTransactionViewController.swift; sourceTree = "<group>"; };
 		58F6CEE41C47FDB30057F234 /* GeneralSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				5806DA7B1C6BC22400CA2038 /* test.swift */,
 				58DED7561C65FE7A0008E8E3 /* SIgnatureViewController.swift */,
 				5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */,
+				58F6B6891C71D1A300C8B813 /* ConfirmTransactionViewController.swift */,
 			);
 			path = SimplyCash;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				58E664561C4625C300E2589F /* CreditSettingsController.swift in Sources */,
 				58D36AA51C60FF8600153436 /* IQKeyboardManagerConstants.swift in Sources */,
 				58D36AA61C60FF8600153436 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				58F6B68A1C71D1A300C8B813 /* ConfirmTransactionViewController.swift in Sources */,
 				58DED7571C65FE7A0008E8E3 /* SIgnatureViewController.swift in Sources */,
 				58F6CEE51C47FDB30057F234 /* GeneralSettingsController.swift in Sources */,
 				58D36A5B1C5F29AA00153436 /* ACHMainViewController.swift in Sources */,
@@ -448,7 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "16090729-5e53-401f-832e-0c39bf331f89";
+				PROVISIONING_PROFILE = "d75ea750-8740-441a-933e-07f2553c1a38";
 			};
 			name = Debug;
 		};
@@ -463,7 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "16090729-5e53-401f-832e-0c39bf331f89";
+				PROVISIONING_PROFILE = "d75ea750-8740-441a-933e-07f2553c1a38";
 			};
 			name = Release;
 		};

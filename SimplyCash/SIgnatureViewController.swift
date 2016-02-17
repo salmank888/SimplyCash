@@ -12,14 +12,22 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
     
     var transID:String!
     
+    var orderID:String!
+    var authCode:String!
+    var saleAmount:String!
+    
+    
     var imageDataString:String!
+    
+    var signatureImage:UIImage!
+    
 
     @IBAction func saveBtn(sender: AnyObject) {
         
         SwiftSpinner.show("Processing..")
         
         // Getting the Signature Image from self.drawSignatureView using the method getSignature().
-        let signatureImage = self.signatureViewOutlet.getSignature()
+        signatureImage = self.signatureViewOutlet.getSignature()
         
         var imageData = UIImagePNGRepresentation(signatureImage)
         
@@ -59,15 +67,27 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "signature_confirm_segue") {
+            let svc = segue.destinationViewController as! ConfirmTransactionViewController;
+            
+            svc.transID = transID
+            svc.orderID = orderID
+            svc.authCode = authCode
+            svc.saleAmount = saleAmount
+            svc.signature = signatureImage
+            
+            
+        }
     }
-    */
+
     
     var mutableData:NSMutableData  = NSMutableData()
     
@@ -229,7 +249,7 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
         switch buttonIndex {
             
         default:
-            self.performSegueWithIdentifier("signature_main_segue", sender: self)
+            self.performSegueWithIdentifier("signature_confirm_segue", sender: self)
             
         }
     }
