@@ -28,10 +28,24 @@ class ConfirmTransactionViewController: UIViewController {
     @IBOutlet weak var signatureVal: UIImageView!
     @IBAction func okBtn(sender: AnyObject) {
     }
+    @IBOutlet weak var okBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        self.signatureVal.layer.borderWidth = 3
+        self.signatureVal.layer.borderColor = UIColor.grayColor().CGColor
+        self.signatureVal.layer.cornerRadius = 10
+        self.signatureVal.clipsToBounds = true
+        
+        
+        self.okBtn.layer.borderWidth = 3
+        self.okBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        self.okBtn.layer.cornerRadius = 10
+        self.okBtn.clipsToBounds = true
+
         saleAmountVal.text = saleAmount
         
         let formatter = NSDateFormatter()

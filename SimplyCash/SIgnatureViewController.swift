@@ -29,7 +29,7 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
         // Getting the Signature Image from self.drawSignatureView using the method getSignature().
         signatureImage = self.signatureViewOutlet.getSignature()
         
-        var imageData = UIImagePNGRepresentation(signatureImage)
+        let imageData = UIImagePNGRepresentation(signatureImage)
         
         imageDataString = imageData!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
 
@@ -50,8 +50,18 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
     
     @IBOutlet weak var signatureViewOutlet: YPDrawSignatureView!
     @IBOutlet weak var referenceNumVal: UILabel!
+    @IBOutlet weak var saveBtnOutlet: UIButton!
+    @IBOutlet weak var clearBtnOutlet: UIButton!
+    @IBOutlet weak var cancelBtnOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.signatureViewOutlet.layer.borderWidth = 3
+        self.signatureViewOutlet.layer.borderColor = UIColor.grayColor().CGColor
+        self.signatureViewOutlet.layer.cornerRadius = 10
+        self.signatureViewOutlet.clipsToBounds = true
+        
         
         self.navigationItem.hidesBackButton = true
 
@@ -59,6 +69,25 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
         // Do any additional setup after loading the view.
         
         referenceNumVal.text = transID
+        
+        self.saveBtnOutlet.layer.borderWidth = 3
+        self.saveBtnOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        self.saveBtnOutlet.layer.cornerRadius = 10
+        self.saveBtnOutlet.clipsToBounds = true
+        
+        
+        self.clearBtnOutlet.layer.borderWidth = 3
+        self.clearBtnOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        self.clearBtnOutlet.layer.cornerRadius = 10
+        self.clearBtnOutlet.clipsToBounds = true
+        
+        
+        self.cancelBtnOutlet.layer.borderWidth = 3
+        self.cancelBtnOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        self.cancelBtnOutlet.layer.cornerRadius = 10
+        self.cancelBtnOutlet.clipsToBounds = true
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -224,34 +253,39 @@ class SIgnatureViewController: UIViewController, NSURLConnectionDelegate, NSXMLP
         }
         else
         {
-            Status = gatewayValues["status"] == nil ? "" : gatewayValues["status"]!
-//            AuthResponse = gatewayValues["auth_response"] == nil ? "" : gatewayValues["auth_response"]!
-//            OrderId = gatewayValues["order_id"] == nil ? "" : gatewayValues["order_id"]!
-//            ReferenceNumber = gatewayValues["reference_number"] == nil ? "" : gatewayValues["reference_number"]!
-//            AuthCode = gatewayValues["auth_code"] == nil ? "" : gatewayValues["auth_code"]!
-//            AVSCode = gatewayValues["avs_code"] == nil ? "" : gatewayValues["avs_code"]!
-//            CVV2Code = gatewayValues["cvv2_code"] == nil ? "" : gatewayValues["cvv2_code"]!
+//            Status = gatewayValues["status"] == nil ? "" : gatewayValues["status"]!
+////            AuthResponse = gatewayValues["auth_response"] == nil ? "" : gatewayValues["auth_response"]!
+////            OrderId = gatewayValues["order_id"] == nil ? "" : gatewayValues["order_id"]!
+////            ReferenceNumber = gatewayValues["reference_number"] == nil ? "" : gatewayValues["reference_number"]!
+////            AuthCode = gatewayValues["auth_code"] == nil ? "" : gatewayValues["auth_code"]!
+////            AVSCode = gatewayValues["avs_code"] == nil ? "" : gatewayValues["avs_code"]!
+////            CVV2Code = gatewayValues["cvv2_code"] == nil ? "" : gatewayValues["cvv2_code"]!
+//            
+//                        let alert = UIAlertView()
+//                        alert.title = "Payment Successful"
+//                        alert.message = "Reference Number: \(transID)"
+//                        alert.addButtonWithTitle("OK")
+//                        alert.delegate = self
+//
+//                        alert.show()
             
-                        let alert = UIAlertView()
-                        alert.title = "Payment Successful"
-                        alert.message = "Reference Number: \(transID)"
-                        alert.addButtonWithTitle("OK")
-                        alert.delegate = self
-
-                        alert.show()
+            self.performSegueWithIdentifier("signature_confirm_segue", sender: self)
             
         }
         print("End document")
     }
     
-    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
-        
-        switch buttonIndex {
-            
-        default:
-            self.performSegueWithIdentifier("signature_confirm_segue", sender: self)
-            
-        }
-    }
+//    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
+//        
+//        switch buttonIndex {
+//            
+//        default:
+//            self.performSegueWithIdentifier("signature_confirm_segue", sender: self)
+//            
+//        }
+//    }
+    
 
 }
+
+

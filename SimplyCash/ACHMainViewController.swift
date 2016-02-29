@@ -9,24 +9,214 @@
 import UIKit
 
 
-class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLParserDelegate, UITextFieldDelegate {
+class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLParserDelegate, UITextFieldDelegate, UIPopoverPresentationControllerDelegate,PopoverDelegate {
 
+    
+    var achSaleRequest = false
+    var achVoidRequest = false
+    var achRecurringRequest = false
+    @IBOutlet weak var transactionTypeOutlet: UISegmentedControl!
     @IBAction func transactionType(sender: AnyObject) {
         
         if sender.selectedSegmentIndex == 0
         {
             JLToast.makeText("Sale", duration: 3).show()
+            
+            achSaleRequest = true
+            achVoidRequest = false
+            achRecurringRequest = false
+            
+            saleAmountLabel.hidden = false
+            saleAmountVal.hidden = false
+            saleAmountUnderline.hidden = false
+            
+            orderIdLabel.text = "Order Id"
+            orderIdVal.placeholder = "order id"
+            
+            routingNumberLabel.hidden = false
+            routingNumberVal.hidden = false
+            routingNumberUnderline.hidden = false
+            
+            ddaLabel.hidden = false
+            directDepositVal.hidden = false
+            ddaUnderline.hidden = false
+            
+            checkNumLabel.hidden = false
+            checkNumberVal.hidden = false
+            checkNumberUnderline.hidden = false
+            
+            accountTypeLabel.hidden = false
+            checkingCB.hidden = false
+            checkingLabel.hidden = false
+            savingCB.hidden = false
+            savingLabel.hidden = false
+            
+            ownerNameLabel.hidden = false
+            ownerNameVal.hidden = false
+            ownerNameUnderline.hidden = false
+            
+            recurringNumberLabel.hidden = true
+            recurringNumVal.hidden = true
+            recurringNumberUnderline.hidden = true
+            
+            startDateLabel.hidden = true
+            startDateVal.hidden = true
+            startDateUnderline.hidden = true
+            
+            recurringTypeLabel.hidden = true
+            recurringTypeVal.hidden = true
+            recurringTypeUnderline.hidden = true
+            
+            endDateLabel.hidden = true
+            endDateVal.hidden = true
+            endDateUnderline.hidden = true
  
         }
         else if sender.selectedSegmentIndex == 1{
             JLToast.makeText("Void", duration: 3).show()
-                   }
+            achSaleRequest = false
+            achVoidRequest = true
+            achRecurringRequest = false
+            
+            
+            saleAmountLabel.hidden = true
+            saleAmountVal.hidden = true
+            saleAmountUnderline.hidden = true
+            
+            
+            orderIdLabel.text = "Reference/Transaction Number"
+            orderIdVal.placeholder = "reference number"
+            
+            
+            routingNumberLabel.hidden = true
+            routingNumberVal.hidden = true
+            routingNumberUnderline.hidden = true
+            
+            ddaLabel.hidden = true
+            directDepositVal.hidden = true
+            ddaUnderline.hidden = true
+            
+            checkNumLabel.hidden = true
+            checkNumberVal.hidden = true
+            checkNumberUnderline.hidden = true
+            
+            accountTypeLabel.hidden = true
+            checkingCB.hidden = true
+            checkingLabel.hidden = true
+            savingCB.hidden = true
+            savingLabel.hidden = true
+            
+            ownerNameLabel.hidden = true
+            ownerNameVal.hidden = true
+            ownerNameUnderline.hidden = true
+            
+            recurringNumberLabel.hidden = true
+            recurringNumVal.hidden = true
+            recurringNumberUnderline.hidden = true
+            
+            startDateLabel.hidden = true
+            startDateVal.hidden = true
+            startDateUnderline.hidden = true
+            
+            recurringTypeLabel.hidden = true
+            recurringTypeVal.hidden = true
+            recurringTypeUnderline.hidden = true
+            
+            endDateLabel.hidden = true
+            endDateVal.hidden = true
+            endDateUnderline.hidden = true
+            }
         else if sender.selectedSegmentIndex == 2{
             JLToast.makeText("Recurring", duration: 3).show()
+            achSaleRequest = false
+            achVoidRequest = false
+            achRecurringRequest = true
+            
+            saleAmountLabel.hidden = false
+            saleAmountVal.hidden = false
+            saleAmountUnderline.hidden = false
+            
+            orderIdLabel.text = "Order Id"
+            orderIdVal.placeholder = "order id"
+            
+            routingNumberLabel.hidden = false
+            routingNumberVal.hidden = false
+            routingNumberUnderline.hidden = false
+            
+            ddaLabel.hidden = false
+            directDepositVal.hidden = false
+            ddaUnderline.hidden = false
+            
+            checkNumLabel.hidden = false
+            checkNumberVal.hidden = false
+            checkNumberUnderline.hidden = false
+            
+            accountTypeLabel.hidden = false
+            checkingCB.hidden = false
+            checkingLabel.hidden = false
+            savingCB.hidden = false
+            savingLabel.hidden = false
+            
+            ownerNameLabel.hidden = false
+            ownerNameVal.hidden = false
+            ownerNameUnderline.hidden = false
+            
+            recurringNumberLabel.hidden = false
+            recurringNumVal.hidden = false
+            recurringNumberUnderline.hidden = false
+            
+            startDateLabel.hidden = false
+            startDateVal.hidden = false
+            startDateUnderline.hidden = false
+            
+            recurringTypeLabel.hidden = false
+            recurringTypeVal.hidden = false
+            recurringTypeUnderline.hidden = false
+            
+            endDateLabel.hidden = false
+            endDateVal.hidden = false
+            endDateUnderline.hidden = false
  
         }
 
     }
+   
+    @IBOutlet weak var saleAmountLabel: UILabel!
+    
+    @IBOutlet weak var saleAmountUnderline: UIView!
+    @IBOutlet weak var orderIdLabel: UILabel!
+    @IBOutlet weak var orderIdUnderline: UIView!
+    @IBOutlet weak var routingNumberLabel: UILabel!
+    @IBOutlet weak var routingNumberUnderline: UIView!
+    @IBOutlet weak var ddaLabel: UILabel!
+    @IBOutlet weak var ddaUnderline: UIView!
+    @IBOutlet weak var checkNumLabel: UILabel!
+    @IBOutlet weak var checkNumberUnderline: UIView!
+    @IBOutlet weak var accountTypeLabel: UILabel!
+    @IBOutlet weak var checkingLabel: UILabel!
+    @IBOutlet weak var savingLabel: UILabel!
+    @IBOutlet weak var ownerNameLabel: UILabel!
+    @IBOutlet weak var ownerNameUnderline: UIView!
+
+
+    
+    @IBOutlet weak var recurringNumberLabel: UILabel!
+    
+    @IBOutlet weak var recurringNumberUnderline: UIView!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var startDateUnderline: UIView!
+    
+    @IBOutlet weak var recurringTypeLabel: UILabel!
+    
+    @IBOutlet weak var recurringTypeUnderline: UIView!
+    
+    @IBOutlet weak var endDateLabel: UILabel!
+    
+    @IBOutlet weak var endDateUnderline: UIView!
+    
+    
+    
+    
     @IBOutlet weak var ownerNameVal: UITextField!
     @IBOutlet weak var saleAmountVal: UITextField!
     @IBOutlet weak var orderIdVal: UITextField!
@@ -38,10 +228,84 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
     
     @IBOutlet weak var savingCB: CheckboxButton!
     
+    @IBAction func onStartDateBeginEditing(sender: AnyObject) {
+        
+        
+        let datePickerView:UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        startDateVal.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: Selector("startDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+        
+
+    }
+    
+  
+    func startDatePickerValueChanged(sender:UIDatePicker) {
+        
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+//        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
+        startDateVal.text = dateFormatter.stringFromDate(sender.date)
+        
+        print(sender.date)
+        
+    }
+    
+    @IBAction func onEndDateBeginEditing(sender: AnyObject) {
+        
+        let datePickerView:UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        endDateVal.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: Selector("endDatePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+
+    }
+    
+    // 7
+    func endDatePickerValueChanged(sender:UIDatePicker) {
+        
+        let dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        //        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
+        endDateVal.text = dateFormatter.stringFromDate(sender.date)
+        
+        print(sender.date)
+        
+    }
+    
+    
+    @IBAction func onRecurringValBeginEditing(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("popover_segue", sender: self)
+        
+    }
+    
+    func adaptivePresentationStyleForPresentationController(
+        controller: UIPresentationController) -> UIModalPresentationStyle {
+            return .None
+    }
+    
+    @IBOutlet weak var endDateVal: UITextField!
+    @IBOutlet weak var recurringTypeVal: UITextField!
+    @IBOutlet weak var startDateVal: UITextField!
+    @IBOutlet weak var recurringNumVal: UITextField!
+    
     var accountType : String = "C"
     var currentString = ""
 
 
+    @IBOutlet weak var submitBtnOutlet: UIButton!
     
     @IBAction func checkingAccTypeVal(sender: CheckboxButton) {
         if sender.on {
@@ -67,16 +331,62 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
     }
     
     @IBAction func achSubmitBtn(sender: AnyObject) {
-        SwiftSpinner.show("Processing..")
-        self.CallSoapService(saleAmountVal.text!, orderId: orderIdVal.text!, aba: routingNumberVal.text!, dda: directDepositVal.text!, checkNum: checkNumberVal.text!, accountType: accountType, ownerName: ownerNameVal.text!)
+        SwiftSpinner.show("Processing...")
+        if achSaleRequest == true{
+            let ach = ACH(operation_type:"ach_debit", ach_orderID: orderIdVal.text!, ach_saleAmnt: saleAmountVal.text!, aba: routingNumberVal.text!, dda: directDepositVal.text!, checkNumber: checkNumberVal.text!, ach_account_type: accountType, owner_name: ownerNameVal.text!)
+        self.CallSoapService(ach.getDirectPostString())
+        }
+        else if achVoidRequest == true{
+            let ach = ACH(operation_type:"ach_void", referenceNUM: orderIdVal.text!)
+            self.CallSoapService(ach.getDirectVoidPostString())
+
+            
+        }else if achRecurringRequest == true{
+            
+            let ach = ACH(operation_type:"ach_debit", ach_orderID: orderIdVal.text!, ach_saleAmnt: saleAmountVal.text!, aba: routingNumberVal.text!, dda: directDepositVal.text!, checkNumber: checkNumberVal.text!, ach_account_type: accountType, owner_name: ownerNameVal.text!, recurring_number : recurringNumVal.text!, recurring_start_date : startDateVal.text!,
+                recurring_type : recurringTypeVal.text!, recurring_end_date : endDateVal.text!)
+            self.CallSoapService(ach.getDirectPostString() + ach.getDirectRecurringPostString())
+        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        if(transactionTypeOutlet.selectedSegmentIndex == 0)
+        {
+            
+            achSaleRequest = true
+            achVoidRequest = false
+            achRecurringRequest = false
+            
+            recurringNumberLabel.hidden = true
+            recurringNumVal.hidden = true
+            recurringNumberUnderline.hidden = true
+            
+            startDateLabel.hidden = true
+            startDateVal.hidden = true
+            startDateUnderline.hidden = true
+            
+            recurringTypeLabel.hidden = true
+            recurringTypeVal.hidden = true
+            recurringTypeUnderline.hidden = true
+            
+            endDateLabel.hidden = true
+            endDateVal.hidden = true
+            endDateUnderline.hidden = true
+
+        }
+        
             checkingCB.on = true
         
             self.saleAmountVal.delegate = self
 
+        
+        self.submitBtnOutlet.layer.borderWidth = 3
+        self.submitBtnOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        self.submitBtnOutlet.layer.cornerRadius = 10
+        self.submitBtnOutlet.clipsToBounds = true
         
         // Do any additional setup after loading the view.
     }
@@ -99,6 +409,25 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
             svc.orderID = OrderId
             svc.authCode = AuthCode
             svc.saleAmount = saleAmountVal.text!
+
+            
+        }
+        else if(segue.identifier == "popover_segue") {
+            let svc = segue.destinationViewController as! PopoverListViewController;
+            
+            svc.delegate = self
+            let controller = svc.popoverPresentationController
+            
+            if controller != nil {
+                controller?.delegate = self
+            }
+            
+            
+        }
+        else if(segue.identifier == "ach_void_segue") {
+            let svc = segue.destinationViewController as! ConfirmTransactionViewController;
+            
+            svc.transID = ReferenceNumber
 
             
         }
@@ -152,24 +481,14 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
     var gatewayValues = [String:String]()
     let defaults = NSUserDefaults.standardUserDefaults()
 
-    func CallSoapService(saleAmount :String, orderId :String, aba :String, dda :String, checkNum :String, accountType: String, ownerName :String)
+    func CallSoapService(postDataString : String)
     {
-        /*
-        <?xml version="1.0" encoding="utf-8"?>
-        <RESPONSE>
-        <FIELDS>
-        <FIELD KEY="status">1</FIELD>
-        <FIELD KEY="auth_code" />
-        <FIELD KEY="avs_code" />
-        <FIELD KEY="cvv2_code" />
-        <FIELD KEY="auth_response">Pending</FIELD>
-        <FIELD KEY="order_id">Azhar Keyed17</FIELD>
-        <FIELD KEY="reference_number">86538</FIELD>
-        <FIELD KEY="error" />
-        </FIELDS>
-        </RESPONSE>
-        */
-        let soapMessage = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><TRANSACTION><FIELDS><FIELD KEY=\"transaction_center_id\">\(defaults.stringForKey("ACH_TRANSACTIONCENTERID")!)</FIELD><FIELD KEY=\"Processor\">\(defaults.stringForKey("ACH_PROCESSOR")!)</FIELD><FIELD KEY=\"MID\">\(defaults.stringForKey("ACH_MID")!)</FIELD><FIELD KEY=\"gateway_id\">\(defaults.stringForKey("ACH_GATEWAYID")!)</FIELD><FIELD KEY=\"operation_type\">ach_debit</FIELD><FIELD KEY=\"order_id\">\(orderId)</FIELD><FIELD KEY=\"ach_category_text\">Web Payments</FIELD><FIELD KEY=\"total\">\(saleAmount)</FIELD><FIELD KEY=\"aba\">\(aba)</FIELD><FIELD KEY=\"dda\">\(dda)</FIELD><FIELD KEY=\"ach_account_type\">\(accountType)</FIELD><FIELD KEY=\"close_date\">06/23/2009</FIELD><FIELD KEY=\"ach_name\">\(ownerName)</FIELD><FIELD KEY=\"owner_name\">\(ownerName)</FIELD><FIELD KEY=\"owner_street\">NP</FIELD><FIELD KEY=\"owner_city\">NP</FIELD><FIELD KEY=\"owner_state\">NP</FIELD><FIELD KEY=\"owner_zip\">NP</FIELD><FIELD KEY=\"owner_country\">US</FIELD></FIELDS></TRANSACTION>"
+
+//        let soapMessage = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><TRANSACTION><FIELDS><FIELD KEY=\"transaction_center_id\">\(defaults.stringForKey("ACH_TRANSACTIONCENTERID")!)</FIELD><FIELD KEY=\"Processor\">\(defaults.stringForKey("ACH_PROCESSOR")!)</FIELD><FIELD KEY=\"MID\">\(defaults.stringForKey("ACH_MID")!)</FIELD><FIELD KEY=\"gateway_id\">\(defaults.stringForKey("ACH_GATEWAYID")!)</FIELD><FIELD KEY=\"operation_type\">ach_debit</FIELD><FIELD KEY=\"order_id\">\(orderId)</FIELD><FIELD KEY=\"ach_category_text\">Web Payments</FIELD><FIELD KEY=\"total\">\(saleAmount)</FIELD><FIELD KEY=\"aba\">\(aba)</FIELD><FIELD KEY=\"dda\">\(dda)</FIELD><FIELD KEY=\"ach_account_type\">\(accountType)</FIELD><FIELD KEY=\"close_date\">06/23/2009</FIELD><FIELD KEY=\"ach_name\">\(ownerName)</FIELD><FIELD KEY=\"owner_name\">\(ownerName)</FIELD><FIELD KEY=\"owner_street\">NP</FIELD><FIELD KEY=\"owner_city\">NP</FIELD><FIELD KEY=\"owner_state\">NP</FIELD><FIELD KEY=\"owner_zip\">NP</FIELD><FIELD KEY=\"owner_country\">US</FIELD></FIELDS></TRANSACTION>"
+        
+
+
+                let soapMessage = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><TRANSACTION><FIELDS><FIELD KEY=\"transaction_center_id\">\(defaults.stringForKey("ACH_TRANSACTIONCENTERID")!)</FIELD><FIELD KEY=\"Processor\">\(defaults.stringForKey("ACH_PROCESSOR")!)</FIELD><FIELD KEY=\"MID\">\(defaults.stringForKey("ACH_MID")!)</FIELD><FIELD KEY=\"gateway_id\">\(defaults.stringForKey("ACH_GATEWAYID")!)</FIELD>\(postDataString)</FIELDS></TRANSACTION>"
         
         let urlString = "https://secure.1stpaygateway.net/secure/gateway/xmlgateway.aspx"
         
@@ -260,6 +579,46 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
     func parserDidEndDocument(parser: NSXMLParser)
     {
         SwiftSpinner.hide()
+        if achVoidRequest == true{
+          
+            let error = gatewayValues["error1"] == nil ? "" : gatewayValues["error1"]
+            let status = gatewayValues["status1"] == nil ? "" : gatewayValues["status1"]
+
+            if(!error!.isEmpty)
+            {
+                let alert = UIAlertView()
+                alert.title = "Alert"
+                alert.message = error!
+                alert.addButtonWithTitle("OK")
+                alert.show()
+            }
+            else if(status == "1")
+            {
+                Status = gatewayValues["status1"] == nil ? "" : gatewayValues["status1"]!
+                ReferenceNumber = gatewayValues["reference_number1"] == nil ? "" : gatewayValues["reference_number1"]!
+
+                
+                
+                //            let alert = UIAlertView()
+                //            alert.title = "Payment Successful"
+                //            alert.message = "Reference Number: \(ReferenceNumber)"
+                //            alert.addButtonWithTitle("OK")
+                //            alert.show()
+                    self.performSegueWithIdentifier("ach_void_segue", sender: self)
+
+       
+            }
+            else {
+                
+                let alert = UIAlertView()
+                alert.title = "Alert"
+                alert.message = "Void Failed. Transaction cannot be voided"
+                alert.addButtonWithTitle("OK")
+                alert.show()
+            }
+            
+        }
+        else{
         let error = gatewayValues["error"] == nil ? "" : gatewayValues["error"]
         if(!error!.isEmpty)
         {
@@ -279,15 +638,24 @@ class ACHMainViewController: UIViewController, NSURLConnectionDelegate, NSXMLPar
             AVSCode = gatewayValues["avs_code"] == nil ? "" : gatewayValues["avs_code"]!
             CVV2Code = gatewayValues["cvv2_code"] == nil ? "" : gatewayValues["cvv2_code"]!
             
+            
 //            let alert = UIAlertView()
 //            alert.title = "Payment Successful"
 //            alert.message = "Reference Number: \(ReferenceNumber)"
 //            alert.addButtonWithTitle("OK")
 //            alert.show()
-            self.performSegueWithIdentifier("signature_segue", sender: self)
 
+            self.performSegueWithIdentifier("signature_segue", sender: self)
+    
+            }
         }
         print("End document")
+    }
+    
+    func updateRecurringTypeVal(data: String) {
+        // Uses the data passed back
+        
+        recurringTypeVal.text = data
     }
 
 }
