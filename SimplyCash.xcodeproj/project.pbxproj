@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5806DA7A1C6B8CCD00CA2038 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */; };
+		580781CB1C8719D800CC62C9 /* CreditMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580781CA1C8719D800CC62C9 /* CreditMainViewController.swift */; };
 		581BE3551C83091F004C904D /* PopoverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581BE3541C83091F004C904D /* PopoverDelegate.swift */; };
 		5824BCA41C843E7000A01E10 /* ACH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5824BCA31C843E7000A01E10 /* ACH.swift */; };
 		5840988C1C50B6CF002D12E8 /* SOAPServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		580781CA1C8719D800CC62C9 /* CreditMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditMainViewController.swift; sourceTree = "<group>"; };
 		581BE3541C83091F004C904D /* PopoverDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverDelegate.swift; sourceTree = "<group>"; };
 		5824BCA31C843E7000A01E10 /* ACH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACH.swift; sourceTree = "<group>"; };
 		5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPServiceController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580781C91C87092000CC62C9 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				58D36A541C5E53DE00153436 /* CheckboxButton.swift */,
+				5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */,
+				58D36A561C5F262800153436 /* SwiftSpinner.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		581BE3531C8308EC004C904D /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,12 +152,11 @@
 		58976BAA1C3CE41B00E23344 /* SimplyCash */ = {
 			isa = PBXGroup;
 			children = (
+				580781C91C87092000CC62C9 /* Others */,
 				5824BCA21C843E2300A01E10 /* Custom Classes */,
 				581BE3531C8308EC004C904D /* Delegates */,
 				58DED74E1C6514D60008E8E3 /* JLToast */,
 				58D36A881C60FF8500153436 /* IQKeyboardManagerSwift */,
-				58D36A561C5F262800153436 /* SwiftSpinner.swift */,
-				58D36A541C5E53DE00153436 /* CheckboxButton.swift */,
 				58976BAB1C3CE41B00E23344 /* AppDelegate.swift */,
 				58976BAD1C3CE41B00E23344 /* ViewController.swift */,
 				58976BAF1C3CE41B00E23344 /* Main.storyboard */,
@@ -159,9 +170,9 @@
 				5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */,
 				58D36A5A1C5F29AA00153436 /* ACHMainViewController.swift */,
 				58DED7561C65FE7A0008E8E3 /* SIgnatureViewController.swift */,
-				5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */,
 				58F6B6891C71D1A300C8B813 /* ConfirmTransactionViewController.swift */,
 				5887DA661C81C93500DD300C /* PopoverListViewController.swift */,
+				580781CA1C8719D800CC62C9 /* CreditMainViewController.swift */,
 			);
 			path = SimplyCash;
 			sourceTree = "<group>";
@@ -331,6 +342,7 @@
 				58D36A571C5F262800153436 /* SwiftSpinner.swift in Sources */,
 				581BE3551C83091F004C904D /* PopoverDelegate.swift in Sources */,
 				58D36A551C5E53DE00153436 /* CheckboxButton.swift in Sources */,
+				580781CB1C8719D800CC62C9 /* CreditMainViewController.swift in Sources */,
 				58D36AA21C60FF8600153436 /* IQUIView+Hierarchy.swift in Sources */,
 				58E664521C4386A700E2589F /* SettingsViewController.swift in Sources */,
 				58D36AA81C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -469,17 +481,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: fawaz bokhari (W6N67XY9Z4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: fawaz bokhari (W6N67XY9Z4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
 				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				INFOPLIST_FILE = SimplyCash/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4421cf0a-0a60-48e6-b873-cd43f3c27143";
+				PROVISIONING_PROFILE = "aec60e20-19d6-4ac4-a124-00fca4f6c1c9";
 			};
 			name = Debug;
 		};
@@ -487,17 +500,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: fawaz bokhari (W6N67XY9Z4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: fawaz bokhari (W6N67XY9Z4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
 				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				INFOPLIST_FILE = SimplyCash/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4421cf0a-0a60-48e6-b873-cd43f3c27143";
+				PROVISIONING_PROFILE = "aec60e20-19d6-4ac4-a124-00fca4f6c1c9";
 			};
 			name = Release;
 		};

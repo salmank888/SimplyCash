@@ -36,7 +36,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource{
             self.performSegueWithIdentifier("GeneralSettings_Segue", sender: indexPath)
         }
         else if lSettings == "Credit Settings"{
-            self.performSegueWithIdentifier("Credit_Segue", sender: indexPath)
+            self.performSegueWithIdentifier("CREDIT_Segue", sender: indexPath)
         }
         
         

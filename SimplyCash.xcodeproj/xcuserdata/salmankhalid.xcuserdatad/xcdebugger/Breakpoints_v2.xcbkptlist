@@ -193,6 +193,53 @@
             endingLineNumber = "12"
             landmarkName = "ACHMainViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimplyCash.ACHMainViewController.__deallocating_deinit"
+                  moduleName = "SimplyCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
+                  timestampString = "478871678.923559"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimplyCash.ACHMainViewController.init (SimplyCash.ACHMainViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; SimplyCash.ACHMainViewController"
+                  moduleName = "SimplyCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
+                  timestampString = "478871678.92396"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimplyCash.ACHMainViewController.init (SimplyCash.ACHMainViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SimplyCash.ACHMainViewController&gt;"
+                  moduleName = "SimplyCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
+                  timestampString = "478871678.924335"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,6 +334,53 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
             endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimplyCash.ACHMainViewController.__deallocating_deinit"
+                  moduleName = "SimplyCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
+                  timestampString = "478871678.931056"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimplyCash.ACHMainViewController.init (SimplyCash.ACHMainViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; SimplyCash.ACHMainViewController"
+                  moduleName = "SimplyCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
+                  timestampString = "478871678.931314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimplyCash.ACHMainViewController.init (SimplyCash.ACHMainViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SimplyCash.ACHMainViewController&gt;"
+                  moduleName = "SimplyCash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
+                  timestampString = "478871678.931562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
