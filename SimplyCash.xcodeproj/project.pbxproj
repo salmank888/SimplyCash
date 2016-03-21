@@ -10,6 +10,14 @@
 		5806DA7A1C6B8CCD00CA2038 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */; };
 		580781CB1C8719D800CC62C9 /* CreditMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580781CA1C8719D800CC62C9 /* CreditMainViewController.swift */; };
 		581BE3551C83091F004C904D /* PopoverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581BE3541C83091F004C904D /* PopoverDelegate.swift */; };
+		582117931C9446BB00DD593A /* UniMagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582117861C9446BB00DD593A /* UniMagViewController.m */; };
+		582117941C9446BB00DD593A /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582117881C9446BB00DD593A /* ReaderViewController.m */; };
+		582117951C9446BB00DD593A /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5821178A1C9446BB00DD593A /* SwipeViewController.m */; };
+		582117961C9446BB00DD593A /* CommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5821178C1C9446BB00DD593A /* CommandViewController.m */; };
+		582117971C9446BB00DD593A /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5821178E1C9446BB00DD593A /* HelpViewController.m */; };
+		582117981C9446BB00DD593A /* AboutScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582117901C9446BB00DD593A /* AboutScreenViewController.m */; };
+		582117991C9446BB00DD593A /* UMCardData.m in Sources */ = {isa = PBXBuildFile; fileRef = 582117921C9446BB00DD593A /* UMCardData.m */; };
+		5821179D1C94480B00DD593A /* IDTECH_UniMag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5821179B1C94480B00DD593A /* IDTECH_UniMag.a */; };
 		5824BCA41C843E7000A01E10 /* ACH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5824BCA31C843E7000A01E10 /* ACH.swift */; };
 		5840988C1C50B6CF002D12E8 /* SOAPServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */; };
 		5887DA671C81C93500DD300C /* PopoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887DA661C81C93500DD300C /* PopoverListViewController.swift */; };
@@ -53,6 +61,23 @@
 		5806DA791C6B8CCD00CA2038 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
 		580781CA1C8719D800CC62C9 /* CreditMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditMainViewController.swift; sourceTree = "<group>"; };
 		581BE3541C83091F004C904D /* PopoverDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverDelegate.swift; sourceTree = "<group>"; };
+		582117841C9446BA00DD593A /* SimplyCash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimplyCash-Bridging-Header.h"; sourceTree = "<group>"; };
+		582117851C9446BB00DD593A /* UniMagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniMagViewController.h; sourceTree = "<group>"; };
+		582117861C9446BB00DD593A /* UniMagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniMagViewController.m; sourceTree = "<group>"; };
+		582117871C9446BB00DD593A /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		582117881C9446BB00DD593A /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
+		582117891C9446BB00DD593A /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		5821178A1C9446BB00DD593A /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		5821178B1C9446BB00DD593A /* CommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandViewController.h; sourceTree = "<group>"; };
+		5821178C1C9446BB00DD593A /* CommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandViewController.m; sourceTree = "<group>"; };
+		5821178D1C9446BB00DD593A /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		5821178E1C9446BB00DD593A /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		5821178F1C9446BB00DD593A /* AboutScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutScreenViewController.h; sourceTree = "<group>"; };
+		582117901C9446BB00DD593A /* AboutScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutScreenViewController.m; sourceTree = "<group>"; };
+		582117911C9446BB00DD593A /* UMCardData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMCardData.h; sourceTree = "<group>"; };
+		582117921C9446BB00DD593A /* UMCardData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMCardData.m; sourceTree = "<group>"; };
+		5821179B1C94480B00DD593A /* IDTECH_UniMag.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = IDTECH_UniMag.a; sourceTree = "<group>"; };
+		5821179C1C94480B00DD593A /* uniMag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uniMag.h; sourceTree = "<group>"; };
 		5824BCA31C843E7000A01E10 /* ACH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACH.swift; sourceTree = "<group>"; };
 		5840988B1C50B6CF002D12E8 /* SOAPServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOAPServiceController.swift; sourceTree = "<group>"; };
 		5887DA661C81C93500DD300C /* PopoverListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverListViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5821179D1C94480B00DD593A /* IDTECH_UniMag.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +148,29 @@
 				581BE3541C83091F004C904D /* PopoverDelegate.swift */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		5821179E1C9468E800DD593A /* Unimag SDK */ = {
+			isa = PBXGroup;
+			children = (
+				5821179B1C94480B00DD593A /* IDTECH_UniMag.a */,
+				5821179C1C94480B00DD593A /* uniMag.h */,
+				582117851C9446BB00DD593A /* UniMagViewController.h */,
+				582117861C9446BB00DD593A /* UniMagViewController.m */,
+				582117881C9446BB00DD593A /* ReaderViewController.m */,
+				582117891C9446BB00DD593A /* SwipeViewController.h */,
+				582117871C9446BB00DD593A /* ReaderViewController.h */,
+				5821178A1C9446BB00DD593A /* SwipeViewController.m */,
+				5821178B1C9446BB00DD593A /* CommandViewController.h */,
+				5821178C1C9446BB00DD593A /* CommandViewController.m */,
+				5821178D1C9446BB00DD593A /* HelpViewController.h */,
+				5821178E1C9446BB00DD593A /* HelpViewController.m */,
+				5821178F1C9446BB00DD593A /* AboutScreenViewController.h */,
+				582117901C9446BB00DD593A /* AboutScreenViewController.m */,
+				582117911C9446BB00DD593A /* UMCardData.h */,
+				582117921C9446BB00DD593A /* UMCardData.m */,
+			);
+			name = "Unimag SDK";
 			sourceTree = "<group>";
 		};
 		5824BCA21C843E2300A01E10 /* Custom Classes */ = {
@@ -152,6 +201,7 @@
 		58976BAA1C3CE41B00E23344 /* SimplyCash */ = {
 			isa = PBXGroup;
 			children = (
+				5821179E1C9468E800DD593A /* Unimag SDK */,
 				580781C91C87092000CC62C9 /* Others */,
 				5824BCA21C843E2300A01E10 /* Custom Classes */,
 				581BE3531C8308EC004C904D /* Delegates */,
@@ -173,6 +223,7 @@
 				58F6B6891C71D1A300C8B813 /* ConfirmTransactionViewController.swift */,
 				5887DA661C81C93500DD300C /* PopoverListViewController.swift */,
 				580781CA1C8719D800CC62C9 /* CreditMainViewController.swift */,
+				582117841C9446BA00DD593A /* SimplyCash-Bridging-Header.h */,
 			);
 			path = SimplyCash;
 			sourceTree = "<group>";
@@ -343,16 +394,22 @@
 				581BE3551C83091F004C904D /* PopoverDelegate.swift in Sources */,
 				58D36A551C5E53DE00153436 /* CheckboxButton.swift in Sources */,
 				580781CB1C8719D800CC62C9 /* CreditMainViewController.swift in Sources */,
+				582117931C9446BB00DD593A /* UniMagViewController.m in Sources */,
 				58D36AA21C60FF8600153436 /* IQUIView+Hierarchy.swift in Sources */,
+				582117991C9446BB00DD593A /* UMCardData.m in Sources */,
 				58E664521C4386A700E2589F /* SettingsViewController.swift in Sources */,
+				582117961C9446BB00DD593A /* CommandViewController.m in Sources */,
 				58D36AA81C60FF8600153436 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				58DED7551C6514D60008E8E3 /* JLToastView.swift in Sources */,
+				582117971C9446BB00DD593A /* HelpViewController.m in Sources */,
 				58DED7541C6514D60008E8E3 /* JLToastCenter.swift in Sources */,
 				58D36AA01C60FF8600153436 /* IQUIScrollView+Additions.swift in Sources */,
+				582117941C9446BB00DD593A /* ReaderViewController.m in Sources */,
 				58D36A9F1C60FF8600153436 /* IQNSArray+Sort.swift in Sources */,
 				58D36AAB1C60FF8600153436 /* IQTitleBarButtonItem.swift in Sources */,
 				58D36AA71C60FF8600153436 /* IQKeyboardManager.swift in Sources */,
 				58E664541C46244F00E2589F /* ACHSettingsController.swift in Sources */,
+				582117951C9446BB00DD593A /* SwipeViewController.m in Sources */,
 				58D36AAD1C60FF8600153436 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				58E664561C4625C300E2589F /* CreditSettingsController.swift in Sources */,
 				58D36AA51C60FF8600153436 /* IQKeyboardManagerConstants.swift in Sources */,
@@ -367,6 +424,7 @@
 				58D36AA11C60FF8600153436 /* IQUITextFieldView+Additions.swift in Sources */,
 				5806DA7A1C6B8CCD00CA2038 /* YPDrawSignatureView.swift in Sources */,
 				58D36AA41C60FF8600153436 /* IQUIWindow+Hierarchy.swift in Sources */,
+				582117981C9446BB00DD593A /* AboutScreenViewController.m in Sources */,
 				58D36AA91C60FF8600153436 /* IQTextView.swift in Sources */,
 				58D36AAC1C60FF8600153436 /* IQToolbar.swift in Sources */,
 			);
@@ -481,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
 				COPY_PHASE_STRIP = YES;
@@ -490,9 +549,16 @@
 				INFOPLIST_FILE = SimplyCash/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimplyCash",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aec60e20-19d6-4ac4-a124-00fca4f6c1c9";
+				PROVISIONING_PROFILE = "bea838a8-5ee5-4ab9-a412-48116899266c";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimplyCash/SimplyCash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -500,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fawaz bokhari (NAW8D36WBZ)";
 				COPY_PHASE_STRIP = YES;
@@ -509,9 +576,15 @@
 				INFOPLIST_FILE = SimplyCash/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimplyCash",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplyconnectedsystems.SimplyCash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aec60e20-19d6-4ac4-a124-00fca4f6c1c9";
+				PROVISIONING_PROFILE = "bea838a8-5ee5-4ab9-a412-48116899266c";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimplyCash/SimplyCash-Bridging-Header.h";
 			};
 			name = Release;
 		};

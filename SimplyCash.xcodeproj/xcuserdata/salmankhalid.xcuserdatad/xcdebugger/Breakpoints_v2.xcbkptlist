@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimplyCash/ViewController.swift"
-            timestampString = "474042504.758144"
+            timestampString = "479487577.963696"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -202,7 +202,7 @@
                   moduleName = "SimplyCash"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
-                  timestampString = "478871678.923559"
+                  timestampString = "480267868.463711"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -217,7 +217,7 @@
                   moduleName = "SimplyCash"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
-                  timestampString = "478871678.92396"
+                  timestampString = "480267868.463983"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -232,7 +232,7 @@
                   moduleName = "SimplyCash"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
-                  timestampString = "478871678.924335"
+                  timestampString = "480267868.464247"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -343,7 +343,7 @@
                   moduleName = "SimplyCash"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
-                  timestampString = "478871678.931056"
+                  timestampString = "480267868.469245"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -358,7 +358,7 @@
                   moduleName = "SimplyCash"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
-                  timestampString = "478871678.931314"
+                  timestampString = "480267868.469471"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -373,7 +373,7 @@
                   moduleName = "SimplyCash"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/salmankhalid/Desktop/SimplyCash/SimplyCash/ACHMainViewController.swift"
-                  timestampString = "478871678.931562"
+                  timestampString = "480267868.469683"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -700,6 +700,166 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "init(operation_type:ach_orderID:ach_saleAmnt:aba:dda:checkNumber:ach_account_type:owner_name:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/CreditMainViewController.swift"
+            timestampString = "479979351.172706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "creditTransactionType(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/CreditMainViewController.swift"
+            timestampString = "479979351.172706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "creditTransactionType(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/CreditMainViewController.swift"
+            timestampString = "479979351.172706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "creditTransactionType(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/CreditMainViewController.swift"
+            timestampString = "480267867.395204"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "446"
+            endingLineNumber = "446"
+            landmarkName = "DataMining(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/UniMagViewController.m"
+            timestampString = "479997934.129838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "638"
+            endingLineNumber = "638"
+            landmarkName = "-umSwipe_receivedSwipe:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/UniMagViewController.m"
+            timestampString = "479997934.129838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "639"
+            endingLineNumber = "639"
+            landmarkName = "-umSwipe_receivedSwipe:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/UniMagViewController.m"
+            timestampString = "479997934.129838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "640"
+            endingLineNumber = "640"
+            landmarkName = "-umSwipe_receivedSwipe:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/UniMagViewController.m"
+            timestampString = "479997934.129838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "601"
+            endingLineNumber = "601"
+            landmarkName = "-umSwipe_receivedSwipe:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/CreditMainViewController.swift"
+            timestampString = "480267681.507976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
+            landmarkName = "swipeReceived(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimplyCash/CreditMainViewController.swift"
+            timestampString = "480267927.371336"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "swipeReceived(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

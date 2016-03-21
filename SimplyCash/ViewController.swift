@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var cardSelect: UIView!
@@ -15,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var checkSelect: UIView!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         checkSelect.addGestureRecognizer(checkTap)
         
         self.navigationItem.hidesBackButton = true
+        
+    // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

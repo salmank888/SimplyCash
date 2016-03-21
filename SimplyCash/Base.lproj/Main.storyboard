@@ -935,7 +935,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Taa-jc-UZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2770" y="1027"/>
+            <point key="canvasLocation" x="2804" y="2009"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="970-0r-oHW">
@@ -1276,13 +1276,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-gc-pxe">
-                                <rect key="frame" x="0.0" y="-64" width="600" height="970"/>
+                                <rect key="frame" x="0.0" y="-64" width="600" height="600"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-Xu-Apg">
                                 <rect key="frame" x="0.0" y="-64" width="600" height="486"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="iVM-bs-jJn" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="750"/>
+                                        <rect key="frame" x="0.0" y="64" width="600" height="900"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rc5-Or-t9S">
                                                 <rect key="frame" x="153" y="42" width="295" height="29"/>
@@ -1293,7 +1293,19 @@
                                                     <segment title="Recurring"/>
                                                 </segments>
                                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="creditTransactionType:" destination="0tf-q0-lae" eventType="valueChanged" id="hJq-pM-UJF"/>
+                                                </connections>
                                             </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale Amount $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-vl-YcK">
+                                                <rect key="frame" x="16" y="85" width="113" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hOa-vl-YcK" secondAttribute="height" multiplier="113:21" id="VgZ-su-gAa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKm-0Z-edn">
                                                 <rect key="frame" x="16" y="114" width="568" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1357,7 +1369,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="check number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UH5-dt-LRU">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="cvv number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UH5-dt-LRU">
                                                 <rect key="frame" x="16" y="315" width="568" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1496,15 +1508,6 @@
                                                     <constraint firstAttribute="width" secondItem="EY1-1W-fqV" secondAttribute="height" multiplier="284:1" id="6a1-rb-zB4"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale Amount $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-vl-YcK">
-                                                <rect key="frame" x="16" y="85" width="113" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="hOa-vl-YcK" secondAttribute="height" multiplier="113:21" id="VgZ-su-gAa"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="hOa-vl-YcK" firstAttribute="top" secondItem="rc5-Or-t9S" secondAttribute="bottom" constant="15" id="02c-hy-OWG"/>
@@ -1572,7 +1575,7 @@
                                             <constraint firstItem="tOB-jm-hE5" firstAttribute="leading" secondItem="SXt-Yf-HfY" secondAttribute="leading" id="hNG-WZ-BGh"/>
                                             <constraint firstItem="CtC-MF-D6w" firstAttribute="trailing" secondItem="qGI-vL-LfQ" secondAttribute="trailing" id="hO1-vi-Zo7"/>
                                             <constraint firstItem="pVJ-sq-nNg" firstAttribute="trailing" secondItem="gas-iD-5oM" secondAttribute="trailing" id="hrt-El-B5m"/>
-                                            <constraint firstAttribute="height" constant="750" id="n9a-5H-hNj"/>
+                                            <constraint firstAttribute="height" constant="900" id="n9a-5H-hNj"/>
                                             <constraint firstItem="pVJ-sq-nNg" firstAttribute="top" secondItem="wLD-sn-nSY" secondAttribute="bottom" constant="8" symbolic="YES" id="nfM-Dh-3KX"/>
                                             <constraint firstItem="wfX-oF-aho" firstAttribute="trailing" secondItem="Q0c-zy-KeR" secondAttribute="trailing" id="qGg-zJ-FZW"/>
                                             <constraint firstItem="CO8-f0-zc0" firstAttribute="trailing" secondItem="gas-iD-5oM" secondAttribute="trailing" id="rAX-uW-oue"/>
@@ -1597,12 +1600,12 @@
                                     <constraint firstItem="iVM-bs-jJn" firstAttribute="top" secondItem="YAB-Xu-Apg" secondAttribute="top" constant="64" id="67g-bD-TzC"/>
                                     <constraint firstItem="iVM-bs-jJn" firstAttribute="leading" secondItem="YAB-Xu-Apg" secondAttribute="leading" id="GS5-lt-DK8"/>
                                     <constraint firstAttribute="trailing" secondItem="iVM-bs-jJn" secondAttribute="trailing" id="IMO-Q8-WQo"/>
-                                    <constraint firstAttribute="bottom" secondItem="iVM-bs-jJn" secondAttribute="bottom" constant="20" symbolic="YES" id="qrk-dF-k7U" userLabel="bottom = ContentView.bottom"/>
+                                    <constraint firstAttribute="bottom" secondItem="iVM-bs-jJn" secondAttribute="bottom" constant="20" symbolic="YES" id="uU5-z3-KsT"/>
                                     <constraint firstItem="iVM-bs-jJn" firstAttribute="centerX" secondItem="YAB-Xu-Apg" secondAttribute="centerX" id="xxA-sd-6Du"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gan-Hb-3tP" userLabel="Submit">
-                                <rect key="frame" x="20" y="506" width="560" height="30"/>
+                                <rect key="frame" x="394" y="506" width="186" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1613,29 +1616,98 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitBtn:" destination="0tf-q0-lae" eventType="touchUpInside" id="1Fo-4Q-4G7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncb-uO-vVA">
+                                <rect key="frame" x="20" y="506" width="186" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Swipe">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="swipeBtn:" destination="0tf-q0-lae" eventType="touchUpInside" id="S2X-XH-gY4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqt-Ht-R5M" userLabel="Scan">
+                                <rect key="frame" x="207" y="506" width="186" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="scanBtn:" destination="0tf-q0-lae" eventType="touchUpInside" id="kzu-Jd-wuU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YAB-Xu-Apg" secondAttribute="trailing" id="0QV-gz-Ekv"/>
-                            <constraint firstItem="gan-Hb-3tP" firstAttribute="centerX" secondItem="jXp-gc-pxe" secondAttribute="centerX" id="395-Pt-8yI"/>
+                            <constraint firstItem="vNo-1K-cS1" firstAttribute="top" secondItem="jXp-gc-pxe" secondAttribute="bottom" id="3SM-L0-CNa"/>
                             <constraint firstItem="YAB-Xu-Apg" firstAttribute="trailing" secondItem="jXp-gc-pxe" secondAttribute="trailing" id="5Aw-xH-bWG"/>
-                            <constraint firstItem="vNo-1K-cS1" firstAttribute="top" secondItem="YAB-Xu-Apg" secondAttribute="bottom" id="8Pp-SE-S0a"/>
                             <constraint firstItem="YAB-Xu-Apg" firstAttribute="leading" secondItem="kdF-Ja-6lq" secondAttribute="leading" id="EZn-kg-P5F"/>
+                            <constraint firstItem="bqt-Ht-R5M" firstAttribute="baseline" secondItem="gan-Hb-3tP" secondAttribute="baseline" id="Fbz-xS-3ik"/>
+                            <constraint firstItem="bqt-Ht-R5M" firstAttribute="leading" secondItem="Ncb-uO-vVA" secondAttribute="trailing" constant="1" id="Git-eQ-FRD"/>
                             <constraint firstItem="YAB-Xu-Apg" firstAttribute="bottom" secondItem="vNo-1K-cS1" secondAttribute="top" constant="-114" id="Lmb-eg-dxC"/>
+                            <constraint firstItem="gan-Hb-3tP" firstAttribute="leading" secondItem="bqt-Ht-R5M" secondAttribute="trailing" constant="1" id="Pek-bR-MaC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gan-Hb-3tP" secondAttribute="trailing" id="Uy4-tn-TbT"/>
                             <constraint firstItem="YAB-Xu-Apg" firstAttribute="top" secondItem="BNn-2u-Qg8" secondAttribute="bottom" constant="-64" id="Ypa-jx-aI3"/>
+                            <constraint firstItem="bqt-Ht-R5M" firstAttribute="baseline" secondItem="Ncb-uO-vVA" secondAttribute="baseline" id="cmA-L1-4pk"/>
                             <constraint firstAttribute="bottom" secondItem="gan-Hb-3tP" secondAttribute="bottom" id="f4p-8T-O7r"/>
+                            <constraint firstItem="Ncb-uO-vVA" firstAttribute="leading" secondItem="kdF-Ja-6lq" secondAttribute="leadingMargin" id="jUV-ai-Hgh"/>
+                            <constraint firstItem="Ncb-uO-vVA" firstAttribute="width" secondItem="bqt-Ht-R5M" secondAttribute="width" id="mLY-iG-5RQ"/>
                             <constraint firstItem="YAB-Xu-Apg" firstAttribute="top" secondItem="jXp-gc-pxe" secondAttribute="top" id="o7E-BF-3Zp"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="gan-Hb-3tP" secondAttribute="leading" id="qne-OL-aQz"/>
+                            <constraint firstItem="bqt-Ht-R5M" firstAttribute="centerX" secondItem="YAB-Xu-Apg" secondAttribute="centerX" id="qSd-nd-u42"/>
                             <constraint firstItem="YAB-Xu-Apg" firstAttribute="leading" secondItem="jXp-gc-pxe" secondAttribute="leading" id="se7-S5-jO9"/>
+                            <constraint firstItem="bqt-Ht-R5M" firstAttribute="width" secondItem="gan-Hb-3tP" secondAttribute="width" id="wKi-ms-SM1"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="8Pp-SE-S0a"/>
-                            </mask>
-                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="ccExpUnderline" destination="qGI-vL-LfQ" id="pfx-Nm-H46"/>
+                        <outlet property="ccExpVal" destination="CtC-MF-D6w" id="R1k-I1-biq"/>
+                        <outlet property="ccExpiryLabel" destination="11o-ub-w5U" id="Zef-AM-mUU"/>
+                        <outlet property="ccLabel" destination="0Ox-wS-l7G" id="Gry-wD-9hL"/>
+                        <outlet property="ccUnderline" destination="Q0c-zy-KeR" id="KGu-gY-udg"/>
+                        <outlet property="ccVal" destination="wfX-oF-aho" id="8Tv-Sn-pv6"/>
+                        <outlet property="cvvLabel" destination="gRv-uI-a0D" id="wJE-qE-DPB"/>
+                        <outlet property="cvvUnderline" destination="nki-qv-U8H" id="Zln-zk-JAL"/>
+                        <outlet property="cvvVal" destination="UH5-dt-LRU" id="hWl-Go-83r"/>
+                        <outlet property="endDateLabel" destination="tOB-jm-hE5" id="iZn-AQ-HlK"/>
+                        <outlet property="endDateUnderline" destination="EY1-1W-fqV" id="RcD-eM-msI"/>
+                        <outlet property="endDateVal" destination="HX7-ae-JFz" id="jrc-4A-7zT"/>
+                        <outlet property="orderIdLabel" destination="wLD-sn-nSY" id="BXS-I2-mAm"/>
+                        <outlet property="orderIdUnderline" destination="gas-iD-5oM" id="ixG-dZ-gAh"/>
+                        <outlet property="orderIdVal" destination="pVJ-sq-nNg" id="IfU-EJ-WZE"/>
+                        <outlet property="ownerNameLabel" destination="7hO-KV-x37" id="Pc9-aN-2tF"/>
+                        <outlet property="ownerNameUnderline" destination="T9A-0F-h7T" id="Rx1-lY-5NS"/>
+                        <outlet property="ownerNameVal" destination="CO8-f0-zc0" id="DdO-2Z-IYw"/>
+                        <outlet property="recurringDateUnderline" destination="G7G-Ez-tzk" id="Sag-d0-GhM"/>
+                        <outlet property="recurringNumberLabel" destination="IlV-64-yXj" id="NuF-a6-7Lv"/>
+                        <outlet property="recurringNumberUnderline" destination="4GG-7g-t2N" id="Ysj-ii-Kx8"/>
+                        <outlet property="recurringNumberVal" destination="1bS-G4-Svs" id="qF8-nj-YRP"/>
+                        <outlet property="recurringTypeLabel" destination="tdL-gh-MoN" id="fCl-K0-hh7"/>
+                        <outlet property="recurringTypeUnderline" destination="SXt-Yf-HfY" id="ber-bM-e3l"/>
+                        <outlet property="recurringTypeVal" destination="wvZ-er-afS" id="nmN-Ci-D0F"/>
+                        <outlet property="saleAmountLabel" destination="hOa-vl-YcK" id="kra-1a-kxv"/>
+                        <outlet property="saleAmountVal" destination="rKm-0Z-edn" id="t7W-VC-aeV"/>
+                        <outlet property="saleUnderline" destination="eh4-41-vPa" id="MSG-AV-2in"/>
+                        <outlet property="startDateLabel" destination="PXR-hX-V1N" id="XG3-HW-9EI"/>
+                        <outlet property="startDateVal" destination="Oth-Se-gkT" id="CTE-NI-6lb"/>
+                        <outlet property="swipeBtnOutlet" destination="Ncb-uO-vVA" id="MYH-Rq-XWt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeR-5E-sva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
